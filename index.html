@@ -5,103 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body data-bs-theme="dark">
-    <div class="container my-5">
-        <h1 class="text-end fw-bolder text-dark-emphasis">Solar System</h1>
-        <hr>
-        <div class="text-center">
-            <a href="https://en.wikipedia.org/wiki/Solar_System" target="_blank" class="d-block py-3">
-                <img src="main solar system image.png" class="img-fluid rounded-3" height="300" width="500"
-                    title="solar system" usemap="#solar-system">
-            </a>
-            <a href="https://en.wikipedia.org/wiki/Solar_System" target="_blank">
-                click on the picture or the planets to know their details
-            </a>
-            <map name="solar-system">
-                <area shape="rect" coords="0,0,70,300" title="sun" href="sun.html" target=f2>
-                <area shape="circle" coords="111,140,13" title="mercury" href="mercury.html" target=f3>
-                <area shape="circle" coords="135,140,13" title="venus" href="venus.html" target=f4>
-                <area shape="circle" coords="165,140,13" title="earth" href="earth.html" target=f5>
-                <area shape="circle" coords="192,140,13" title="mars" href="mars.html" target=f6>
-                <area shape="circle" coords="245,140,35" title="jupiter" href="jupiter.html" target=f7>
-                <area shape="circle" coords="337,140,40" title="saturn" href="satrun.html" target=f8>
-                <area shape="circle" coords="397,140,14" title="uranus" href="uranus.html" target=f9>
-                <area shape="circle" coords="437,140,14" title="neptune" href="neptune.html" target=f10>
-                <!--<area shape="rect" coords="70,190,500,300" title="solar system" href="https://en.wikipedia.org/wiki/Solar_System" target=f12>-->
-                <area shape="rect" coords="70,0,500,95" title="solar system" href="https://s.codepen.io/juliangarnier/fullpage/idhuG#jupiterspeed
-" target=f12>
-            </map>
+
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center vh-100">
+            <div>
+                <h1 class="text-center fw-bolder text-dark-emphasis mb-5">Solar System</h1>
+                <div class="text-center">
+
+                    <img src="assets/images/solar-system.png" class="img-fluid rounded-3 shadow" height="300"
+                        width="500" title="The Solar System" usemap="#solar-system">
+
+                    <map name="solar-system">
+                        <area shape="rect" coords="0,0,70,300" alt="sun" title="sun" href="" target="_blank"
+                            data-bs-toggle="modal" data-bs-target="#sunModal">
+                        <area shape="circle" coords="111,140,13" alt="mercury" title="mercury" href="mercury.html"
+                            target="_blank">
+                        <area shape="circle" coords="135,140,13" alt="venus" title="venus" href="venus.html"
+                            target="_blank">
+                        <area shape="circle" coords="165,140,13" alt="earth" title="earth" href="earth.html"
+                            target="_blank">
+                        <area shape="circle" coords="192,140,13" alt="mars" title="mars" href="mars.html"
+                            target="_blank">
+                        <area shape="circle" coords="245,140,35" alt="jupiter" title="jupiter" href="jupiter.html"
+                            target="_blank">
+                        <area shape="circle" coords="337,140,40" alt="saturn" title="saturn" href="satrun.html"
+                            target="_blank">
+                        <area shape="circle" coords="397,140,14" alt="uranus" title="uranus" href="uranus.html"
+                            target="_blank">
+                        <area shape="circle" coords="437,140,14" alt="neptune" title="neptune" href="neptune.html"
+                            target="_blank">
+                        <area shape="rect" coords="70,0,500,95" alt="T" title="he Solar System"
+                            href="https://s.codepen.io/juliangarnier/fullpage/idhuG#jupiterspeed" target="_blank">
+                    </map>
+
+                    <p class="my-5 fst-italic">
+                        <strong>Note:</strong> Click on the picture or the planets to know their details
+                    </p>
+                </div>
+            </div>
         </div>
-        <hr>
-        <font size=+1>
-            <p align=justify>
-                The Solar System is the gravitationally bound planetary system of the Sun and the objects that orbit
-                it,
-                either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight
-                planets, with the remainder being smaller objects, such as the five dwarf planets and small Solar
-                System
-                bodies. Of the objects that orbit the Sun indirectly�the moons�two are larger than the smallest
-                planet,
-                Mercury.
-                The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant
-                interstellar
-                molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the
-                remaining
-                mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are
-                terrestrial
-                planets, being primarily composed of rock and metal. The four outer planets are giant planets, being
-                substantially more massive than the terrestrials. The two largest, Jupiter and Saturn are gas
-                giants, being
-                composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice
-                giants, being
-                composed mostly of substances with relatively high melting points compared with hydrogen and helium,
-                called
-                volatiles, such as water, ammonia and methane. All eight planets have almost circular orbits that
-                lie within
-                a nearly flat disc called the ecliptic.
-                The Solar System also contains smaller objects. The asteroid belt, which lies between the orbits of
-                Mars and
-                Jupiter, mostly contains objects composed, like the terrestrial planets, of rock and metal. Beyond
-                Neptune's
-                orbit lie the Kuiper belt and scattered disc, which are populations of trans-Neptunian objects
-                composed
-                mostly of ices and beyond them a newly discovered population of sednoids. Within these populations
-                are
-                several dozen to possibly tens of thousands of objects large enough that they have been rounded by
-                their own
-                gravity. Such objects are categorized as dwarf planets. Identified dwarf planets include the
-                asteroid Ceres
-                and the trans-Neptunian objects Pluto and Eris. In addition to these two regions, various other
-                small-body
-                populations, including comets, centaurs and interplanetary dust clouds, freely travel between
-                regions. Six
-                of the planets, at least four of the dwarf planets, and many of the smaller bodies are orbited by
-                natural
-                satellites, usually termed "moons" after the Moon. Each of the outer planets is encircled by
-                planetary rings
-                of dust and other small objects.
-                The solar wind, a stream of charged particles flowing outwards from the Sun, creates a bubble-like
-                region in
-                the interstellar medium known as the heliosphere. The heliopause is the point at which pressure from
-                the
-                solar wind is equal to the opposing pressure of the interstellar medium; it extends out to the edge
-                of the
-                scattered disc. The Oost cloud, which is thought to be the source for long-period comets, may also
-                exist at
-                a distance roughly a thousand times further than the heliosphere. The Solar System is located in the
-                Orion
-                Arm, 26,000 light-years from the center of the Milky Way galaxy.
-            </p>
-            <hr>
-            <p align=right>
-                - Aarsh Patel
-            </p>
-            <hr>
     </div>
+
+    <!-- The Sun Modal -->
+    <div class="modal fade" id="sunModal" tabindex="-1" aria-labelledby="sunModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-1" id="sunModalLabel">The Sun</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="assets/images/sun.jpg" alt="The Sun" title="Sun" height="200" width="200">
+                    </div>
+                    <hr>
+                    <h4>Basic Facts</h4>
+                    <ul>
+                        <li><strong>Type:</strong> G-type main-sequence star (G2V), commonly called a yellow dwarf.</li>
+                        <li><strong>Age:</strong> Approximately 4.6 billion years old.</li>
+                        <li><strong>Diameter:</strong> About 1.39 million kilometers (864,000 miles).</li>
+                        <li><strong>Mass:</strong> Roughly 1.989 x 10<sup>30</sup> kilograms, accounting for about
+                            99.86% of the total mass of the Solar System.</li>
+                    </ul>
+                    <h4>Structure</h4>
+                    <ul>
+                        <li><strong>Core:</strong> The central region where nuclear fusion occurs, converting hydrogen
+                            into helium and releasing vast amounts of energy.</li>
+                        <li><strong>Radiative Zone:</strong> The layer where energy produced in the core is radiated
+                            outward.</li>
+                        <li><strong>Convective Zone:</strong> The outer layer of the Sun's interior where energy is
+                            transferred by convection.</li>
+                        <li><strong>Photosphere:</strong> The visible surface of the Sun, emitting the light we see.
+                        </li>
+                        <li><strong>Chromosphere:</strong> A layer above the photosphere, visible during solar eclipses.
+                        </li>
+                        <li><strong>Corona:</strong> The outermost part of the Sun's atmosphere, extending millions of
+                            kilometers into space and visible during a total solar eclipse.</li>
+                    </ul>
+                    <h4>Solar Activity</h4>
+                    <ul>
+                        <li><strong>Sunspots:</strong> Dark, cooler areas on the Sun's surface caused by magnetic
+                            activity.</li>
+                        <li><strong>Solar Flares:</strong> Sudden eruptions of energy and particles from the Sun's
+                            surface.</li>
+                        <li><strong>Coronal Mass Ejections (CMEs):</strong> Large expulsions of plasma and magnetic
+                            field from the corona into space.</li>
+                    </ul>
+                    <h4>Influence on the Solar System</h4>
+                    <ul>
+                        <li><strong>Solar Wind:</strong> A continuous flow of charged particles from the Sun that
+                            affects the entire Solar System and shapes planetary magnetospheres.</li>
+                        <li><strong>Heliosphere:</strong> The bubble-like region of space dominated by the solar wind
+                            and magnetic field, extending far beyond Pluto's orbit.</li>
+                    </ul>
+                    <h4>Life Cycle</h4>
+                    <p>Currently in its stable phase, the Sun will eventually evolve into a red giant, expanding
+                        significantly before shedding its outer layers and leaving behind a white dwarf.</p>
+                    <p>The Sun is essential not only for providing the energy necessary for life on Earth but also for
+                        driving the dynamics of the entire Solar System.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
